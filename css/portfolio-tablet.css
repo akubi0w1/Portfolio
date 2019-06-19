@@ -6,3 +6,7 @@
 .card-block{
     display: block;
 }
+
+#profile img{
+    height: 230px;
+}
