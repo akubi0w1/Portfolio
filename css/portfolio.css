@@ -7,7 +7,7 @@ body{
     position: relative;
     height: 100%;
     color: #514743;
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -54,11 +54,11 @@ h1, h2, h3, h4, h5, h6{
     font: 600 30px normal;
     text-align: center;
     /* line-height: 350px; */
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .logo{
-    font-family : fantasy, 'Osaka-Mono','Comic Sans MS',Courier, serif;
+    font-family : fantasy, 'Comic Sans MS', monospace;
     font-size: 1.5em;
 }
 
@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6{
     position: absolute;
     background-color: #fff;
     box-shadow: 0px 5px 15px #9d9592;
+    z-index: 100;
 }
 
 .fixed{
