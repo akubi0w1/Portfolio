@@ -3,19 +3,48 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio-phone.css" type="text/css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="css/portfolio-tablet.css" type="text/css" media="screen and (min-width: 700px) and (max-width: 980px)">
+    <!-- <link rel="stylesheet" href="css/portfolio-computer.css" type="text/css" media="screen and (min-width: 1024px)"> -->
+
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/portfolio.js"></script>
+    <script src="js/navigation.js"></script>
 </head>
-<body>
-    <div id="intro" class="header"></div>
+<body>    
+    <div id="intro" class="header">
+        <div class="overlay">
+            <div class="header-content">
+                <label class="logo">Moe Ohashi's Portfolio</label>
+            </div>
+        </div>
+    </div>
     
     <nav class="nav">
         <ul class="nav-bar">
-            <li><a href="#intro">top</a></li>
-            <li><a href="#item-me">about me</a></li>
-            <li><a href="#item-works">works</a></li>
-            <li><a href="#item-skills">skills</a></li>
-            <li><a href="#item-contact">contact</a></li>
+            <li><a href="#intro">Top</a></li>
+            <li><a href="#item-me">About me</a></li>
+            <li><a href="#item-works">Works</a></li>
+            <li><a href="#item-skills">Skills</a></li>
+            <li><a href="#item-contact">Contact</a></li>
+        </ul>
+        
+        <ul class="nav-bar-hamburger">
+            <button class="btn btn-white toggle-nav" onclick="toggleNavigation()">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div id="hamburger-menu" class="menu">
+                <li>
+                    <a href="#intro">Top</a>
+                </li>
+                <li><a href="#item-me">About me</a></li>
+                <li><a href="#item-works">Works</a></li>
+                <li><a href="#item-skills">Skills</a></li>
+                <li><a href="#item-contact">Contact</a></li>
+            </div>
         </ul>
     </nav>
     
@@ -27,8 +56,9 @@
             </div>
             <div class="block-50" style="text-align: left;">
                 <p>はじめまして．<br>中京大学工学部情報工学科3年，大橋 萌枝です．</p>
-                <p>HTML，CSS，JavaScript，React など，web系の技術を中心に勉強中です．</p>
-                <p>Dockerやインフラ技術にも手を出し始めました．</p>
+                <p>現在，HTML，CSS，JavaScript，React などweb系の技術を中心に勉強中です．</p>
+                <p>インフラ技術にも手を出し始めました．</p>
+                <p>趣味でイラストを描いたりゲームを作ったりしています．</p>
             </div>
         </div>
     </div>
@@ -36,49 +66,139 @@
     <div id="item-works" class="container">
         <div class="content">
             <h2 class="title">Works</h2>
-            <div class="block-50">
-                <div class="card">
-                    comming soom
+            <div class="card-block">
+                <div class="block-50">
+                    <div class="card">
+                        <i class="fas fa-map-pin fa-2x" style="transform: rotate(45deg); margin-left: 20px;"></i>
+                        <h3>webアプリケーション</h3>
+                        <p>Pamstoreは作業の過程や悩んだ問題を<br>記録、共有することができるサービスです</p>
+                        <img alt="pamstore_image" src="image/pamstore.png">
+                        <p>開発環境: Python3.6, Django2, PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="block-50">
+                    <div class="card">
+                        <i class="fas fa-map-pin fa-2x" style="transform: rotate(45deg); margin-left: 20px;"></i>
+                        <h3>npmパッケージ</h3>
+                        <p>Pamstoreで作成したエディタの<br>npmパッケージ化を行っています</p>
+                        <img alt="pameditor_image" src="image/pameditor.png">
+
+                    </div>
                 </div>
             </div>
-            <div class="block-50">
-                <div class="card">
-                    comming soom
-                </div>
-            </div>
+            
         </div>
     </div>
 
     <div id="item-skills" class="container">
         <div class="content">
             <h2 class="title">Skills</h2>
-            <div class="block-50">
-                <div class="card">
-                    comming soom
+            <div class="card-block">
+                <div class="block-50">
+                    <div class="card">
+                        <h3>Python</h3>
+                        <p>webアプリケーションの開発やスクレイピング，データ分析などの経験があります．</p>
+
+                        <div class="card-content">
+                            <ul>
+                                <li>Django2</li>
+                                <li>BeautifulSoup4</li>
+                                <li>matplotlib</li>
+                                <li>pandas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-50">
+                    <div class="card">
+                        <h3>フロントエンド</h3>
+                        <p>webアプリケーションの開発を経験しています．</p>
+                        <div class="card-content">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="block-50">
-                <div class="card">
-                    comming soom
+        
+            <div class="card-block">
+                <div class="block-50">
+                    <div class="card">
+                        <h3>OS</h3>
+                        <p>Ubuntuを用いたサーバ構築経験があります．</p>
+                        <div class="card-content">
+                            <ul>
+                                <li>Ubuntu</li>
+                                <li>Debian</li>
+                                <li>FreeBSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-50">
+                    <div class="card">
+                        <h3>その他</h3>
+                        <div class="card-content">
+                            <p>開発，ゼミなどで使用したツールなどです</p>
+                            <ul>
+                                <li>git</li>
+                                <li>slack</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <div class="card-block">
+                <div class="block-50">
+                    <div class="card">
+                        <h3>興味のある技術</h3>
+                        <p>勉強中，または勉強したい技術</p>
+                        <div class="card-content">
+                            <ul>
+                                <li>Docker</li>
+                                <li>React</li>
+                                <li>Ruby</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
     <div id="item-contact" class="container">
         <div class="content">
-            <h2 class="title">Contact</h2>
-            <div class="contact-set">
-                <div>icon</div>
-                <div>中京大学</div>
-            </div>
-            <div class="contact-set">
-                <div>icon</div>
-                <div>Twitter</div>
-            </div>
-            <div class="contact-set">
-                <div>icon</div>
-                <div>Github</div>
+            <div class="overlay">
+                <h2 class="title">Contact</h2>
+                <p>何かありましたら，Twitterなどからご連絡ください</p>
+                <!-- <div class="contact-set">
+                    <div class="icon">icon</div>
+                    <div>中京大学</div>
+                </div> -->
+                <div class="contact-set">
+                    <a href="https://twitter.com/yawn_yawn_yawn_" target="_blank">
+                        <div class="icon">
+                            <i class="fab fa-twitter fa-4x"></i>
+                        </div>
+                    </a>
+                    <div>Twitter<br>@yawn_yawn_yawn_</div>
+                </div>
+                <div class="contact-set">
+                    <a href="https://github.com/yawn-yawn-yawn" target="_blank">
+                        <div class="icon">
+                            <i class="fab fa-github fa-4x"></i>
+                        </div>
+                    </a>
+                    <div>GitHub</div>
+                </div>
             </div>
         </div>
     </div>
