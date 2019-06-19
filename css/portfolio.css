@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 .header{
     height: 350px;
     /* background-color: green; */
-    background-image: url(../image/image_02.jpg);
+    background-image: url(../img/image_02.jpg);
     background-size: cover;
     background-position: top;
     color: #fff;
@@ -179,63 +179,59 @@ h1, h2, h3, h4, h5, h6{
     text-align: left;
 }
 
-#item-me, #item-works,
-#item-skills,#item-contact{
+#profile, #works,
+#skills,#contact{
     /* margin-top: -50px; */
     padding-top: 40px;
     padding-bottom: 20px;
 }
 
 /* about me */
-#item-me{
+#profile{
     background-color: #f5f5f5;
     /* color: #fff; */
 }
 
-#item-me .content{
+#profile .content{
     /* background-color: #fff; */
 
 }
 
-#item-me img{
+#profile img{
     border-radius: 50px;
 }
 
 /* works */
-#item-works{
+#works{
     background-color: #857b77;
-    background-image: url(../image/cork02-p.jpg);
+    background-image: url(../img/cork02-p.jpg);
     background-size: 400px;
     color: #fff;
 
 }
-#item-works .content{
+#works .content{
     /* background-color: #857b77; */
     background-color: rgba(0,0,0,0.3);
 }
 
 /* skills */
-#item-skills{
+#skills{
     background-color: #f5f5f5;
 }
 
-#item-skills .content{
+#skills .content{
     /* color: #fff; */
 }
 
-#item-slills .card{
-    background-color: #857b77;
-}
-
 /* contact */
-#item-contact{
-    background-image: url(../image/image_01.jpg);
+#contact{
+    background-image: url(../img/image_01.jpg);
     background-size: cover;
     background-position: top;
     color: #fff;
 }
 
-#item-contact .overlay{
+#contact .overlay{
     height: 100%;
     width: 100%;
     background-color: black;
@@ -245,7 +241,7 @@ h1, h2, h3, h4, h5, h6{
     box-sizing: border-box;
 }
 
-#item-contact .content{
+#contact .content{
     background-color: transparent;
 }
 

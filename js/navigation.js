@@ -16,13 +16,3 @@ function toggleNavigation(){
         navButton.html('<i class="fas fa-times"></i>');
     }
 }
-
-// $(function(){
-//     $(".nav a").hover(function(){
-//         $(this).css("background-color", "red");
-//     }, function(){
-//         $(this).css("background-color", "");
-//     });
-// 
-// 
-// });
