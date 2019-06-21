@@ -1,10 +1,14 @@
 .block-50{
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 20px;
 }
 
 .card-block{
     display: block;
+}
+
+.content{
+    width: 90%;
 }
 
 #profile img{
