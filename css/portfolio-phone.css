@@ -80,3 +80,8 @@
 #profile img{
     height: 200px;
 }
+
+.contact-set{
+    display: block;
+    margin-bottom: 30px;
+}
