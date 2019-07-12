@@ -204,9 +204,19 @@ h1, h2, h3, h4, h5, h6{
 /* university */
 #university{
     background-color: #857b77;
-    /* background-image: url(../img/image03.jpg); */
+    background-image: url(../img/image04.jpg);
+    background-size: cover;
     color: #fff;
+}
 
+.content .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 /* works */
@@ -239,16 +249,6 @@ h1, h2, h3, h4, h5, h6{
     color: #fff;
 }
 
-#contact .overlay{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    background-color: rgba(0,0,0,0.6);
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
 #contact .content{
     background-color: transparent;
 }
@@ -268,4 +268,35 @@ h1, h2, h3, h4, h5, h6{
 
 .contact-set .icon:hover{
     color: #2da8e5;
+}
+
+.modal-wrap{
+    display: block;
+}
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.modal-content{
+    width: 90%;
+    max-height: 600px;
+    background-color: #fff;
+    padding: 30px;
+    align-self: center;
+    border-radius: 10px;
+    text-align: center;
+    overflow: auto;
+}
+
+.modal-header{
+    
 }
