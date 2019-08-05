@@ -217,7 +217,9 @@ h1, h2, h3, h4, h5, h6{
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box;
+    display: inline-block;
 }
+
 
 /* works */
 #works{
@@ -295,8 +297,4 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 10px;
     text-align: center;
     overflow: auto;
-}
-
-.modal-header{
-    
 }
