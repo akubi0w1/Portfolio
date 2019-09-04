@@ -170,6 +170,14 @@ h1, h2, h3, h4, h5, h6{
     width: 100%;
 }
 
+.card a{
+    color: #2da8e5;
+}
+
+.card a:visited{
+    color: #165472;
+}
+
 .card-content{
     text-align: left;
 }
